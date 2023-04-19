@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>RollingMed</title>
+    <link rel="icon" href="/proyecto clinica rolling/imagenes/rmed.jpg" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+        <div class="container-fluid">
+          <img
+            src="/proyecto clinica rolling/imagenes/rmed.jpg"
+            alt=""
+            width="60"
+            height="60"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="admin.html"
+                  >Home</a
+                >
+              </li>
+              <div class="dropdown">
+                <button
+                  class="btn btn-dark dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Registros
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="medicos.html">Medicos</a></li>
+                  <li><a class="dropdown-item" href="pacientes.html">Pacientes</a></li>
+                  <li><a class="dropdown-item" href="adregistr.html">Administrador</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="btn btn-dark dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pendientes
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="mependientes.html">Medicos</a></li>
+                  <li><a class="dropdown-item" href="pendientespa.html">Pacientes</a></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+       <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <h2 class="mt-5">Lista de Medicos Registrados</h2>
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Usuario</th>
+                            <th scope="col">N° de Matricula</th>
+                            <th scope="col">Especialidad</th>
+                            <th scope="col">Edad</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Lencina Carlos</td>
+                                <td>145.958/5</td>
+                                <td>Deportologo</td>
+                                <td><i class="bi bi-circle-fill green-spot"></i>25</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Zapallo Camila</td>
+                                <td>254.753/9</td>
+                                <td>Ginecologa</td>
+                                <td><i class="bi bi-circle-fill green-spot"></i>50</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Lucena Matias</td>
+                                <td>158.498/1</td>
+                                <td>Psicologo</td>
+                                <td><i class="bi bi-circle-fill green-spot"></i>39</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Dairusse Santiago</td>
+                                <td>348.152/7</td>
+                                <td>Clinica Gral.</td>
+                                <td><i class="bi bi-circle-fill green-spot"></i>58</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Juncos Julieta</td>
+                                <td>245.123/5</td>
+                                <td>Traumatologia</td>
+                                <td><i class="bi bi-circle-fill red-spot"></i>36</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Kameyha Sebastian</td>
+                                <td>189.788/6</td>
+                                <td>Nutricionista</td>
+                                <td><i class="bi bi-circle-fill green-spot"></i>27</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Amaro Luciano</td>
+                                <td>481.273/7</td>
+                                <td>Pediatra</td>
+                                <td><i class="bi bi-circle-fill green-spot"></i>44</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Cobos Cecilia</td>
+                                <td>333.215/9</td>
+                                <td>Pediatra</td>
+                                <td><i class="bi bi-circle-fill green-spot"></i>30</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Silva Santiago</td>
+                                <td>298.154/1</td>
+                                <td>Deportologo</td>
+                                <td><i class="bi bi-circle-fill green-spot"></i>38</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>Rivero Fabrizio</td>
+                                <td>183.645/4</td>
+                                <td>Dermatologo</td>
+                                <td><i class="bi bi-circle-fill green-spot"></i>42</td>
+                                
+                            </tr>
+                    </tbody>
+                </table>
+            </div> 
+
+            <!-- Footer -->
+    <footer>
+        <a href="medicos.html" class="arriba">
+          <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+          <a href="https://es-la.facebook.com/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"
+            target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://web.whatsapp.com/" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+   </footer>
+
+   <!-- Link JS -->
+   <script src="main.js"></script>
+   <!-- JavaScript Bundle with Popper -->
+   <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+     crossorigin="anonymous"
+   ></script>
+</body>
+</html>
