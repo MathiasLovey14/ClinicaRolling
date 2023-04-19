@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>RollingMed</title>
+    <link rel="icon" href="/proyecto clinica rolling/imagenes/rmed.jpg" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+      <div class="container-fluid">
+        <img
+          src="/proyecto clinica rolling/imagenes/rmed.jpg"
+          alt=""
+          width="60"
+          height="60"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="panelmedico.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Especialidades</a
+                >
+              </li>
+ 
+            <li class="nav-item">
+              <a class="nav-link" href="">Turnos</a>
+            </li>
+          </ul>
+
+     
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h2 class="mt-2">Solicitud de Medicos</h2>
+                <table class="table table-success table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">N° de Matricula</th>
+                        <th scope="col">Especialidad</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Rechazar</th>
+                        <th scope="col">Aceptar</th>
+                        <th scope="col">Consultas</th>
+                    </tr>
+                    </thead>
+                    <tbody id="student-list">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Perez Josue</td>
+                        <td>123.123/1</td>
+                        <td>Clinico Gral.</td>
+                        <td><i class=""></i>31</td>
+                        <td><button class="btn-admin btn-delete">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Gutierrez Lucas</td>
+                        <td>123.123/2</td>
+                        <td>Clinico Gral.</td>
+                        <td><i ></i>39</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button type="button" class="btn-admin" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Elias Federico</td>
+                        <td>123.123/3</td>
+                        <td>Pediatra</td>
+                        <td><i ></i>50</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Rocuzzo Antonela</td>
+                        <td>123.123/4</td>
+                        <td>Psicologa</td>
+                        <td><i ></i>57</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Leiva Juan</td>
+                        <td>123.123/5</td>
+                        <td>Deportologo</td>
+                        <td><i></i>41</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Albarracin Samuel</td>
+                        <td>123.123/6</td>
+                        <td>Traumatologo</td>
+                        <td><i ></i>39</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar<i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Flores Bautista</td>
+                        <td>123.123/7</td>
+                        <td>Odontologo</td>
+                        <td><i ></i>28</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Bayurk Valentina</td>
+                        <td>123.123/8</td>
+                        <td>Clinica Gral.</td>
+                        <td><i ></i>31</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Sand Pedro</td>
+                        <td>123.123/9</td>
+                        <td>Clinico Gral.</td>
+                        <td><i ></i>31</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Abdalla Roger</td>
+                        <td>123.124/0</td>
+                        <td>Psicologa</td>
+                        <td><i ></i>55</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Szielienski Carina</td>
+                        <td>123.124/1</td>
+                        <td>Nutricionista</td>
+                        <td><i ></i>31</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Lopez Fausto</td>
+                        <td>123.124/2</td>
+                        <td>Ginecologo</td>
+                        <td><i ></i>47</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>Lopez Camilo</td>
+                        <td>123.124/3</td>
+                        <td>Obstetra</td>
+                        <td><i ></i>25</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                        
+                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>Montaner Faustino</td>
+                        <td>123.124/4</td>
+                        <td>Nutricionista</td>
+                        <td><i></i>23</td>
+                        <td><button class="btn-admin">Rechazar <i class="bi bi-trash trash"></i></button></td>
+                        <td><button class="btn-admin">Aceptar <i class="bi bi-plus-circle add"></i></button></td>
+                        <td><button class="btn-admin">Ver Consulta <i class="bi bi-plus-circle add"></i></button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    <!-- Tabla de productos final -->
+
+    <!-- Footer -->
+    <footer>
+      <a href="index.html" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://es-la.facebook.com/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"
+          target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://web.whatsapp.com/" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="main.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
